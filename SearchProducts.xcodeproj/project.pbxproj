@@ -9,23 +9,30 @@
 /* Begin PBXBuildFile section */
 		2C948F0329F031D20049E6A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F0229F031D20049E6A2 /* AppDelegate.swift */; };
 		2C948F0529F031D20049E6A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F0429F031D20049E6A2 /* SceneDelegate.swift */; };
-		2C948F0729F031D20049E6A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F0629F031D20049E6A2 /* ViewController.swift */; };
 		2C948F0A29F031D20049E6A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C948F0829F031D20049E6A2 /* Main.storyboard */; };
 		2C948F0D29F031D20049E6A2 /* SearchProducts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F0B29F031D20049E6A2 /* SearchProducts.xcdatamodeld */; };
 		2C948F0F29F031D40049E6A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C948F0E29F031D40049E6A2 /* Assets.xcassets */; };
 		2C948F1229F031D40049E6A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C948F1029F031D40049E6A2 /* LaunchScreen.storyboard */; };
+		2C948F1A29F032300049E6A2 /* APIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F1929F032300049E6A2 /* APIHelper.swift */; };
+		2C948F1C29F033FD0049E6A2 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F1B29F033FD0049E6A2 /* SearchResultCell.swift */; };
+		2C948F1F29F0342D0049E6A2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 2C948F1E29F0342D0049E6A2 /* Kingfisher */; };
+		2C948F2129F034950049E6A2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F2029F034950049E6A2 /* SearchViewController.swift */; };
+		2C948F2329F035E10049E6A2 /* DataModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C948F2229F035E10049E6A2 /* DataModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2C948EFF29F031D20049E6A2 /* SearchProducts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchProducts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C948F0229F031D20049E6A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2C948F0429F031D20049E6A2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2C948F0629F031D20049E6A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2C948F0929F031D20049E6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C948F0C29F031D20049E6A2 /* SearchProducts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SearchProducts.xcdatamodel; sourceTree = "<group>"; };
 		2C948F0E29F031D40049E6A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C948F1129F031D40049E6A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C948F1329F031D40049E6A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C948F1929F032300049E6A2 /* APIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIHelper.swift; sourceTree = "<group>"; };
+		2C948F1B29F033FD0049E6A2 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		2C948F2029F034950049E6A2 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		2C948F2229F035E10049E6A2 /* DataModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C948F1F29F0342D0049E6A2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +68,15 @@
 			children = (
 				2C948F0229F031D20049E6A2 /* AppDelegate.swift */,
 				2C948F0429F031D20049E6A2 /* SceneDelegate.swift */,
-				2C948F0629F031D20049E6A2 /* ViewController.swift */,
 				2C948F0829F031D20049E6A2 /* Main.storyboard */,
 				2C948F0E29F031D40049E6A2 /* Assets.xcassets */,
 				2C948F1029F031D40049E6A2 /* LaunchScreen.storyboard */,
 				2C948F1329F031D40049E6A2 /* Info.plist */,
 				2C948F0B29F031D20049E6A2 /* SearchProducts.xcdatamodeld */,
+				2C948F1929F032300049E6A2 /* APIHelper.swift */,
+				2C948F1B29F033FD0049E6A2 /* SearchResultCell.swift */,
+				2C948F2029F034950049E6A2 /* SearchViewController.swift */,
+				2C948F2229F035E10049E6A2 /* DataModels.swift */,
 			);
 			path = SearchProducts;
 			sourceTree = "<group>";
@@ -86,6 +97,9 @@
 			dependencies = (
 			);
 			name = SearchProducts;
+			packageProductDependencies = (
+				2C948F1E29F0342D0049E6A2 /* Kingfisher */,
+			);
 			productName = SearchProducts;
 			productReference = 2C948EFF29F031D20049E6A2 /* SearchProducts.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 2C948EF629F031D20049E6A2;
+			packageReferences = (
+				2C948F1D29F0342D0049E6A2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 2C948F0029F031D20049E6A2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -141,9 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C948F0729F031D20049E6A2 /* ViewController.swift in Sources */,
+				2C948F2329F035E10049E6A2 /* DataModels.swift in Sources */,
+				2C948F2129F034950049E6A2 /* SearchViewController.swift in Sources */,
 				2C948F0D29F031D20049E6A2 /* SearchProducts.xcdatamodeld in Sources */,
 				2C948F0329F031D20049E6A2 /* AppDelegate.swift in Sources */,
+				2C948F1A29F032300049E6A2 /* APIHelper.swift in Sources */,
+				2C948F1C29F033FD0049E6A2 /* SearchResultCell.swift in Sources */,
 				2C948F0529F031D20049E6A2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -220,7 +240,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -274,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -299,6 +319,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -327,6 +348,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -362,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2C948F1D29F0342D0049E6A2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2C948F1E29F0342D0049E6A2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2C948F1D29F0342D0049E6A2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		2C948F0B29F031D20049E6A2 /* SearchProducts.xcdatamodeld */ = {
